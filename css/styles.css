@@ -38,13 +38,13 @@ to match the height of your images.
 */
 .sliderContent {
     background-color: lightgrey;
-    min-height: 220px; 
+    min-height: 400px; 
 }
 
 h1 {
     padding-left: 1rem;
     color: dodgerblue;
-    font-size: 32px;
+    font-size: 2em;
 }
 p {
     padding-left: 1rem;
@@ -104,7 +104,7 @@ If you have 4 sliders width=1/4 or 25%, etc. etc.
 to the animation CSS for it to all work properly. See notes in that section.
 */
 .sliderContainer .sliderFrame .sliderContent {
-    width: 33.33%;
+    width: 33.33333%;
     float: left; 
 }
 
@@ -115,9 +115,9 @@ images you will want to set the .wrapper width to match image's width (e.g., 960
 If you aren't using images then you can set the width parameter to whatever value you want it to be...either a specific pixel/em or a percentage. 
 */
 .wrapper {
-    width: 960px;
-    margin: 0 auto;
-    background: white;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
 
 /* If you include an image directly in your sliderContent div (versus adding it as 
@@ -125,9 +125,9 @@ a background image) this CSS will ensure that it fills 100% of the width of
 the slider.  
 */
 .sliderFrame img {
-	width: 100%;        
-	height:auto;
-    margin: auto;
+	max-width: 100%;        
+/*	height:auto;*/
+/*    margin: auto;*/
 }
 
 .sliderContainer {
@@ -218,4 +218,3 @@ http://www.w3schools.com/css/css3_animations.asp for more details.
     97%     {left:-200%;}
     100%    {left:-200%;}
 }
-
